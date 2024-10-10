@@ -848,12 +848,6 @@ video {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 768px) {
-    .md\:w-\[540px\] {
-        width: 540px;
-    }
-}
-
 #wa-container-btn-plugin {
     position: relative;
     height: 100svh !important;
@@ -865,7 +859,7 @@ video {
     height: 40px;
     overflow: hidden;
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 4.5rem;
     right: 1.5rem;
     background: green;
     border-radius: 50%;
@@ -877,4 +871,23 @@ video {
 
 .bottom-28 {
     bottom: 5.9rem !important;
+}
+
+@media (min-width: 768px) {
+    .md\:w-\[540px\] {
+        width: 540px;
+    }
+
+    .wa-btn-container {
+
+        bottom: 1.5rem !important;
+
+
+    }
+
+    #wa-container-message {
+        bottom: 1.5rem !important;
+    }
+
+
 }
