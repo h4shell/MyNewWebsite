@@ -1,0 +1,72 @@
+#special-form {
+    --specialform-text-color: white;
+}
+
+#special-form .special-form-container {
+    position: relative;
+    color: var(--specialform-text-color);
+}
+
+#special-form .special-form-container input,
+#special-form .special-form-container textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+#special-form .special-form-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--color);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#special-form .container-check {
+    display: flex;
+    gap: 0.4rem;
+}
+
+#special-form #send {
+    color: var(--specialform-text-color);
+    text-decoration: none;
+    border: 1px solid var(--specialform-text-color);
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 0;
+}
+
+#special-form .special-form-container input:focus~label,
+#special-form .special-form-container input:valid~label,
+#special-form .special-form-container textarea:focus~label,
+#special-form .special-form-container textarea:valid~label,
+#special-form .special-form-container input:disabled~label,
+#special-form .special-form-container textarea:disabled~label {
+    top: -20px;
+    left: 0;
+    color: white;
+    font-size: 12px;
+}
+
+#special-form textarea {
+    min-height: 12rem;
+}
+
+#special-form .container-check {
+    margin-bottom: 2rem;
+    ;
+}
+
+#special-form .container-check p {
+    margin-block: auto;
+}
