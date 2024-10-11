@@ -19,7 +19,6 @@
   <link rel="icon" type="public/image/png" sizes="16x16" href="public/img/favicons/favicon-16x16.png">
   <link rel="stylesheet" href="public/css/contact-form.css">
   <link rel="stylesheet" href="public/css/wa-btn.css">
-  <script src="public/js/waBtn.js" defer></script>
 
   <link
     href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap"
@@ -41,9 +40,9 @@
 
 <body class="theme-dark">
 
-  <div id="wa-container-btn-plugin " style="z-index: 1; position: fixed;" class="h-100svh w-screen">
+  <div id="wa-container-btn-plugin " style="z-index: 1; position: fixed;" class="h-100svh w-screen animated-bar">
     <div class="wa-btn-container">
-      <svg id="wa-btn" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg id="wa-btn" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
@@ -57,8 +56,8 @@
       </svg>
     </div>
     <div id="wa-container-message"
-      style="background: url('./public/img/bg.jpg'); background-size: cover; position: absolute!important; "
-      class="absolute w-5/ bottom-28 right-4 rounded-xl overflow-hidden md:w-[540px]">
+      style="background: url('./public/img/bg.jpg'); background-size: cover; position: absolute!important;"
+      class="absolute w-5/ bottom-28 right-4 rounded-xl overflow-hidden md:w-[540px] blob">
       <div id="wa-header-message" class="bg-whatsapp text-white flex items-center px-6 py-6 relative">
         <div id="wa-btn-close" class="absolute right-4 top-4 cursor-pointer z-index 2">
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-x"
@@ -69,7 +68,8 @@
         </div>
         <div class="container-img h-16 w-16 rounded-full overflow-hidden relative"
           style="background: url('./public/img/me.jpg'); background-size: cover; background-position: center;">
-          <span class="bg-green-400 h-2 w-2 absolute rounded-full shadow-2xl" style="bottom:9px; right: 12px;"></span>
+          <span class="bg-green-400 blob h-2 w-2 absolute rounded-full shadow-2xl"
+            style="bottom:9px; right: 12px;"></span>
         </div>
         <div class="container-name py-4 px-6">
           <h6 class="text-xl font-bold">Lorenzo Fornara</h6>
@@ -77,7 +77,7 @@
         </div>
       </div>
       <div id="wa-container-body">
-        <p id=" wp-ora" class="text-center mt-6 mb-9 text-slate-800 opacity-60">14:05</p>
+        <p id="wa-ora" class="text-center mt-6 mb-9 text-slate-800 opacity-60"></p>
         <p class="bg-white w-fit px-3 py-2 rounded-2xl ml-4 mb-8 shadow-md">Hey, come posso aiutarti?</p>
         <a id="wa-btn-send" href="https://wa.me/393481206604">
 
@@ -94,6 +94,8 @@
       </div>
     </div>
   </div>
+
+
 
 
 
@@ -140,7 +142,7 @@
         </div>
       </div>
     </div>
-    <div class="fixed-wrapper">
+    <div class="fixed-wrapper" style="z-index: 1000;">
 
       <div class="fixed-block block-left">
         <ul class="list-unstyled languages-list">
@@ -859,21 +861,11 @@
   <script src="public/js/jquery.mb.YTPlayer.min.js"></script>
   <script src="public/js/main.js"></script>
   <script src="public/js/contactForm.js"></script>
+  <script src="public/js/waBtnFunction.js" defer></script>
 
-  <script>
-    const waBtn = document.querySelector("#wa-btn");
-    const waContainerMessage = document.querySelector("#wa-container-message");
-    const waBtnClose = document.querySelector("#wa-btn-close");
-    waBtn.addEventListener("click", () => {
-      waContainerMessage.classList.toggle("hidden");
-    });
-    waBtnClose.addEventListener("click", () => {
-      waContainerMessage.classList.toggle("hidden");
-    });
 
-  </script>
+
 
 </body>
-
 
 </html>
