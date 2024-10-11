@@ -873,6 +873,15 @@ video {
     bottom: 5.9rem !important;
 }
 
+.h-100svh {
+    height: 100svh;
+}
+
+.bg-whatsapp {
+    background-color: rgb(0, 128, 105);
+}
+
+
 @media (min-width: 768px) {
     .md\:w-\[540px\] {
         width: 540px;
