@@ -647,7 +647,7 @@ video {
 }
 
 .h-screen {
-    height: 100vh;
+    height: 100svh;
 }
 
 .h-full {
@@ -859,7 +859,7 @@ video {
     height: 40px;
     overflow: hidden;
     position: absolute;
-    bottom: 4.5rem;
+    bottom: 1.5rem;
     right: 1.5rem;
     background: green;
     border-radius: 50%;
