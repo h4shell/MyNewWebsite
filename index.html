@@ -15,7 +15,8 @@
           type: 'src',
           position: 'head',
           content: 'https://assets.calendly.com/assets/external/widget.js'
-        }
+        },
+
       ],
       policyLink: '/privacy.html',
       bannerDescription: 'Questo sito utilizza cookie di terze parti per migliorare l’esperienza utente.',
@@ -25,6 +26,8 @@
 
 
     });
+
+
 
     window.addEventListener('load', () => {
       document.getElementById('prebannerBtn').click();
@@ -94,7 +97,6 @@
   <link rel="stylesheet" href="public/css/tiny-slider.css">
   <link rel="stylesheet" href="public/css/lity.min.css">
   <link rel="stylesheet" href="public/css/simplebar.min.css">
-  <link rel="stylesheet" href="public/css/jquery.mb.YTPlayer.min.css">
   <link rel="stylesheet" href="public/css/main.css">
   <link id="color-scheme" rel="stylesheet" href="public/css/colors/main-darkgreen.css">
   <link rel="stylesheet" href="public/css/custom.css">
@@ -185,12 +187,11 @@
       </ul>
     </div>
   </nav>
-  <section class="home-area element-cover-bg video-variant" id="home">
-    <div class="player" id="homeVideo"
-      data-property="{videoURL:'https://youtu.be/KR97TgpMyrc',containment:'#home',autoPlay:true, mute:true, showControls:false, stopMovieOnBlur:false, showYTLogo: false}">
-    </div>
+  <section class="home-area element-cover-bg video-variant" id="home"
+    style="background: url('/public/img/bgwall.jpg'); background-size: cover; background-repeat: no-repeat;">
+
     <div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center">
+      <div class="row h-100 align-items-center justify-content-center" style="z-index: 10000;">
         <div class="col-12 col-lg-8 home-content text-center">
           <h1 class="home-name">Web <span>Agency</span></h1>
           <h4 class="cd-headline clip home-headline">Creazione <span class="cd-words-wrapper single-headline"><b
@@ -948,7 +949,7 @@
   <script src="public/js/contactForm.js"></script>
   <script src="public/js/waBtnFunction.js" defer></script>
 
-  <script src="public/js/jquery.mb.YTPlayer.min.js"></script>
+
 
 
 
