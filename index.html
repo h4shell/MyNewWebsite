@@ -6,6 +6,53 @@
 
 <head>
 
+  <script src="public/js/glowCookie.js"></script>
+  <script>
+    glowCookies.start('it', {
+      style: 1,
+      customScript: [
+        {
+          type: 'src',
+          position: 'head',
+          content: 'https://assets.calendly.com/assets/external/widget.js'
+        }
+      ],
+      policyLink: '/privacy.html',
+      bannerDescription: 'Questo sito utilizza cookie di terze parti per migliorare l’esperienza utente.',
+      acceptBtnText: 'Accetta tutti',
+      rejectBtnText: 'Rifiuta i cookie',
+      hideAfterClick: true
+
+
+    });
+
+    window.addEventListener('load', () => {
+      document.getElementById('prebannerBtn').click();
+    })
+  </script>
+
+
+  <style>
+    #prebannerBtn,
+    #glowCookies-banner {
+      z-index: 100000;
+
+    }
+
+    #prebannerBtn {
+      display: flex !important;
+    }
+
+    @media(min-width: 767px) {
+
+      #prebannerBtn,
+      #glowCookies-banner {
+        z-index: 100000;
+        transform: translateX(80px);
+      }
+    }
+  </style>
+
   <link rel="stylesheet" href="public/css/wa-btn-css.css">
 
   <meta charset="utf-8">
@@ -875,7 +922,7 @@
             <div class="calendly-inline-widget"
               data-url="https://calendly.com/h4shell/consulenza-gratuita?background_color=000000&text_color=ffffff"
               style="min-width:320px;height:700px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
             <!-- Calendly inline widget end -->
           </div>
         </div>
@@ -897,10 +944,14 @@
   <script src="public/js/tiny-slider.js"></script>
   <script src="public/js/lity.min.js"></script>
   <script src="public/js/simplebar.min.js"></script>
-  <script src="public/js/jquery.mb.YTPlayer.min.js"></script>
+
   <script src="public/js/main.js"></script>
   <script src="public/js/contactForm.js"></script>
   <script src="public/js/waBtnFunction.js" defer></script>
+
+  <script src="public/js/jquery.mb.YTPlayer.min.js"></script>
+
+
 
 
 
